@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="eng-ca">
+  
+
+  <head>
+   <title>Matthew's autobiographical website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-sale=1.0, width=device-width">
+  
+  <style>
+  
+    /* ID names */
+    #section0, #section1, #section2, #section3, #section4 {
+ 		 height: 10px;  
+  	}
+    
+    * {
+  box-sizing: border-box;
+	}
+    
+  .header {
+  padding: 15px;
+  margin-top: 50px;
+	font-family: Georgia, serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+    [class*="col-"] {
+  float: left;
+  padding: 15px;
+  background-color: black;
+	color: white;
+  max-height: 500px;
+  min-height: 500px;
+	font-family: Georgia, serif;
+	overflow: scroll;
+}
+
+	/* Border styling CSS */
+			hr.border {
+ 			 border-top: 8px solid #bbb;
+  		border-radius: 3px;
+      border-width: 100%;
+			} 
+    
+ 	/*
+    Code copied from: https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black
+    Author: w3schools.com
+    Name: Tryit: Horizontal navbar with black background color
+    Description: Code to create and format a navigation bar at the top of a web page
+    Date retrieved: Monday, 20th November 2023
+    */
+  
+     /* 
+    Copied code starts:
+    
+    li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+    
+  (Copied code ends)
+    */
+    
+    /* Styling the navigation bar - adapted code from w3schools*/
+    ul {
+    	list-style-type: none;
+  		margin: 0;
+  		padding: 0;
+      overflow: hidden;
+      background: #000;
+      position: fixed;
+ 			top: 0;
+      width: 100%
+    }
+    
+  
+    li{
+      float: right
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+  		text-decoration: none;
+      font-family: Trebuchet MS, serif
+    }
+    
+    /*Button styling*/
+     button a {
+      display: block;
+      color: white;
+      text-align: center;
+  		text-decoration: none;
+      font-family: Trebuchet MS, serif
+    }
+   
+     /*Nav bar button changes color on hover*/
+    li a:hover {
+ 			background-color: #999;
+		}
+   
+         /*Website background color*/
+    body {
+   	 background: red;
+    }
+    
+    
+    /*
+    Code copied from: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button
+    Author: w3schools.com
+    Name: Tryit: Tryit: A dropdown menu
+    Description: Code to create a button drop down menu
+    Date retrieved: Tuesday, 21st November 2023
+    */
+  
+     /* 
+    Copied code starts:
+    
+   .dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+    
+	.dropdown-content a:hover {background-color: #f1f1f1}
+    
+  (Copied code ends)
+    */
+    
+  /*Adapted button styling code*/
+    
+    .btn {
+  	background-color: #000;
+  	color: white;
+  	padding: 16px;
+  	font-size: 16px;
+  	border: 2px solid white;
+  	cursor: pointer;
+	}
+    
+    .btn:hover {background-color: #333}
+    
+   
+    /*Code for desktop format*/  
+    
+     @media only screen and (min-width: 605px) and (max-width:1500px){
+      
+     
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+       
+    }
+   
+        /*Code for mobile format*/  
+    
+    @media only screen and (max-width: 604px){
+    
+.col-1 {width: 100%;}
+.col-2 {width: 100%;}
+.col-3 {width: 100%;}
+.col-4 {width: 100%;}
+.col-5 {width: 100%;}
+.col-6 {width: 100%;}
+.col-7 {width: 100%;}
+.col-8 {width: 100%;}
+.col-9 {width: 100%;}
+.col-10 {width: 100%;}
+.col-11 {width: 100%;}
+.col-12 {width: 100%;}
+
+      
+    }
+    
+  </style>
+  </head>
+  
+  <body>
+  
+<!-- Welcome page title -->
+
+<h1 class="header">
+    Welcome! Allow me to introduce myself!
+    </h1>
+    
+    <div class="row">
+    
+  <!-- Welcome page picture -->
+    
+  <img class="col-8" src="HikingPic.png" alt="Profile photo">
+    
+  <!-- Welcome page introduction div element -->
+    
+  <div class="col-4">
+    <h2>
+      A Brief Introduction:
+    </h2>
+    Hello! My name is Matthew Best.....I know what you are thinking,  “man that is an interesting last name”. Well, just like my name, there is a lot to my life that makes it interesting. As a Canadian who grew up half way accross the world for 19 years, I travelled all the way from Hong Kong to the University of Waterloo to persue a degree in GBDA. This stemmed from my initial interest in my design technology class in my high school years.
+    <br>
+    <br>
+    <button class="btn"><a href="#section1">My Goals</a></button>
+    </div>
+   
+     <!-- Nav bar titles and links to webpage sections -->
+    
+  <ul>
+    <li><a href="#section3">My Family</a></li>
+     <li><a href="#section2">My Hobbies</a></li>
+     <li><a href="#section1">My goals</a></li>
+     <li><a href="#section0">Welcome</a></li>
+    </ul>
+  
+        <!-- Border at the end of Welcome page -->
+  <p>End of section</p>
+<hr class="border" style="position:relative">  
+      </div>
+    
+     <div class="row">
+   <!-- My Goals page title --> 
+    
+ <h1 class="header">
+    My Goals and Aspirations
+  </h1>
+    
+     <!-- My Goals text box div element --> 
+    
+  <div class="col-4">
+    <h2>
+      My Goals:
+    </h2>
+Before arriving in GBDA, I was never fully sure of what I wanted to do later in life. That is still true today. I just know that I want to find an occupation where I will be able to freely express my creative thinking, that makes me happy, and that can still afford me decent wages.
+<br>
+<br>
+(The image shown is a massage vest product I made for my design tech class)
+    </div>
+  
+        <!-- My Goals vest photo --> 
+    
+    <img class="col-8" src="MassageVest.png" alt="Massage vest">
+  
+    <!-- My Aspirations text box div element --> 
+    
+  <div class="col-4" style="float:right">
+    <h2>
+      My Aspirations
+    </h2>
+    Having grown up in Hong Kong my whole life, my current hope is that upon finishing University, I will be able to find a job there that will be able to sustain me when I am on my own. I am also hoping to someday have a few children, as I view myself as being a very family oriented person.
+    </div>
+    
+      <!-- My Goals Hong kong photo --> 
+  
+  <img class="col-8" src="HK.jpg" alt="Hong Kong">
+    
+          <!-- Border at the end of My goals section --> 
+    
+   <p>End of section</p>
+	<hr class="border">  
+     </div>
+       <!-- My Hobbies page title --> 
+    
+   <div class="row">
+    
+    <h1 class="header">
+    My Hobbies
+  </h1>
+    
+    <!-- Hiking text box div element --> 
+    
+    <div class="col-6" style="float:right">
+       <h2>
+      Hiking
+    </h2>
+    Hiking gives me an opportunity to get some exercise while allowing me to take my mind off of the stressess and worries of everyday life. Walking through paths on hills or even just walking through the park gives me a sense of peace where I get to explore and walk through a variety of new areas. 
+         <br>
+     <br>
+     <button class="btn">View photos</button>
+    </div>
+    
+       <img class="col-5" src="WanChai.jpg" alt="Brawl Stars" style="min-height:400px"> 
+    
+    <!-- Gaming text box div element -->
+    
+    <div class="col-6" style="margin-top:130px;">
+       <h2>
+      Gaming
+    </h2>
+    I am primarily into fast paced and intense games that give me an adrenaline rush and get my heart pumping. This includes games such as Fortnite, Smash Ultimate, and Mario Kart for the switch. In terms of mobile games I mainly play Brawl Stars. Ive mainly been into video games ever since the release of the xbox 360!
+    <br>
+    <br>
+    (Below is a screenshot portraying the lobby menu I took from the mobile game “Brawl Stars”)
+     <br>
+     <br>
+     <!-- Button that opens Brawl Stars gameplay Youtube video in new tab -->
+     <button class="btn"><a href="https://www.youtube.com/watch?v=dZFmW809r-I&ab_channel=MatthewBest" target="_blank">View Gameplay<a/></button>
+    </div>
+      
+     <img class="col-5" src="BrawlStars.PNG" alt="Brawl Stars" style="float:right;margin-top:35px;min-height:400px">  
+      
+     </div>
+      
+	</body>
+</html>

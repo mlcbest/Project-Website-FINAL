@@ -20,6 +20,33 @@
   font-family: Verdana, sans-serif
 }
     
+  /*
+    Code adapted from: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_cols
+    Author: w3schools.com
+    Name: Tryit: Build a responsive grid view
+    Description: Code to format a reactive grid layout
+    Date retrieved: Friday, 1st December 2023
+     
+    (Adapted code starts:)
+    
+    * {
+  box-sizing: border-box;
+}
+
+.header {
+  border: 1px solid red;
+  padding: 15px;
+}
+
+  [class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+    (Adapted code ends)
+    */
+    
     * {
   box-sizing: border-box;
 	}
@@ -51,15 +78,13 @@
 			} 
     
  	/*
-    Code copied from: https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black
+    Code adapted from: https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black
     Author: w3schools.com
     Name: Tryit: Horizontal navbar with black background color
     Description: Code to create and format a navigation bar at the top of a web page
     Date retrieved: Monday, 20th November 2023
-    */
-  
-     /* 
-    Copied code starts:
+    
+    (Adapted code starts:)
     
     li {
   float: left;
@@ -77,10 +102,10 @@ li a:hover {
   background-color: #111;
 }
     
-  (Copied code ends)
+  (Adapted code ends)
     */
     
-    /* Styling the navigation bar - adapted code from w3schools*/
+    /* Styling the navigation bar*/
     ul {
     	list-style-type: none;
   		margin: 0;
@@ -127,7 +152,7 @@ li a:hover {
     
     
     /*
-    Code copied from: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button
+    Code adapted from: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button
     Author: w3schools.com
     Name: Tryit: Tryit: A dropdown menu
     Description: Code to create a button drop down menu
@@ -135,7 +160,7 @@ li a:hover {
     */
   
      /* 
-    Copied code starts:
+    (Adapted code starts:)
     
    .dropbtn {
   background-color: #4CAF50;
@@ -148,10 +173,10 @@ li a:hover {
     
 	.dropdown-content a:hover {background-color: #f1f1f1}
     
-  (Copied code ends)
+  (Adapted code ends)
     */
     
-  /*Adapted button styling code*/
+  /*Styling the button*/
     
     .btn {
   	background-color: #000;
@@ -168,7 +193,32 @@ li a:hover {
     /*Code for desktop format*/  
     
      @media only screen and (min-width: 605px) and (max-width:1500px){
-      
+     
+       /*
+    Code copied from: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_cols
+    Author: w3schools.com
+    Name: Tryit: Build a responsive grid view
+    Description: Code to format a reactive grid layout
+    Date retrieved: Friday, 1st December 2023
+       
+      (copied code starts:) 
+       
+       .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+       
+       (copied code ends)
+     */
+       
      
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}

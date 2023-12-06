@@ -10,10 +10,12 @@
   <style>
     
     #Welcome, #MyGoals, #MyHobbies{
+    /*Webpage section ID names*/
     }
   
+  /*Table styling*/     
  table, th, td {
-  border:5px solid white;
+  border: 5px solid white;
   color: white;
   background: black;
   border-collapse: collapse;
@@ -46,11 +48,12 @@
 
     (Adapted code ends)
     */
-    
+       
     * {
   box-sizing: border-box;
 	}
-    
+ 
+ /*Header element styling and rules*/
   .header {
   padding: 15px;
   margin-top: 50px;
@@ -58,10 +61,12 @@
   font-size: 25px;
   font-weight: bold;
 }
-
+    
+  /*Column div elements styling and rules*/   
     [class*="col-"] {
   float: left;
   padding: 20px;
+  margin: 0;
   background-color: black;
 	color: white;
   max-height: 500px;
@@ -118,7 +123,7 @@ li a:hover {
       width: 100%
     }
     
-  
+    /* Nav bar buttons float to right*/
     li{
       float: right
     }
@@ -141,12 +146,12 @@ li a:hover {
       font-family: Trebuchet MS, serif
     }
    
-     /*Nav bar button changes color on hover*/
+     /*Nav bar button changes to light grey on hover*/
     li a:hover {
  			background-color: #999;
 		}
    
-         /*Website background color*/
+    /*Website background color*/
     body {
    	 background: red;
     }
@@ -162,6 +167,7 @@ li a:hover {
   	cursor: pointer;
 	}
     
+  	 /*Button changes to grey on hover*/
     .btn:hover {
       background-color: #333
     }
@@ -196,7 +202,8 @@ li a:hover {
        (copied code ends)
      */
        
-     
+ 
+  /*Website column widths when in desktop format*/ 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -216,6 +223,8 @@ li a:hover {
     
     @media only screen and (max-width: 604px){
     
+      
+     /*Website column widths/margins when in mobile format*/  
 .col-1 {width: 100%;
        margin-top: 35px;}
 .col-2 {width: 100%;
@@ -247,14 +256,17 @@ li a:hover {
   </head>
   
   <body>
+    
+<!-- Welcome section begins -->
   
+ <div class="row" id="Welcome"> 
+    
 <!-- Welcome page title -->
 
-<h1 class="header">
+<h1 class="header" style="margin-top:100px">
     Welcome! Allow me to introduce myself!
     </h1>
     
-    <div class="row" id="Welcome">
     
   <!-- Welcome page picture -->
     
@@ -281,6 +293,8 @@ li a:hover {
      <li><a href="#Welcome">Welcome</a></li>
     </ul>
 
+     <!-- Table area on welcome section -->
+   
   <h2 class="header">
     Interesting facts about myself:
       </h2>
@@ -309,7 +323,10 @@ li a:hover {
 <hr class="border" style="position:relative">  
       </div>
     
+      <!-- My Goals page section --> 
+    
      <div class="row" id="MyGoals">
+       
    <!-- My Goals page title --> 
     
  <h1 class="header">
@@ -350,10 +367,13 @@ Before arriving in GBDA, I was never fully sure of what I wanted to do later in 
    <p>End of section</p>
 	<hr class="border">  
      </div>
-       <!-- My Hobbies page title --> 
+    
+       <!-- My Hobbies page section begins --> 
     
    <div class="row" id="MyHobbies">
     
+       <!-- My Hobbies page title -->  
+     
     <h1 class="header">
     My Hobbies
   </h1>
@@ -370,7 +390,8 @@ Before arriving in GBDA, I was never fully sure of what I wanted to do later in 
       I still have yet to explore a lot of the hiking trails within Hong Kong even though it is one of my primary hobbies. Despite Hong Kong being known as a vibrant city that never sleeps, it is still mostly forest. I would recommend hiking up to the Peak building from the Chi Fu or Aberdeen area if you ever visit!
     </div>
     
-       <img class="col-5" src="WanChai.jpg" alt="Brawl Stars" style="min-height:400px"> 
+       <!-- Hiking photo div element --> 
+       <img class="col-5" src="WanChai.jpg" alt="Wan Chai Trail Photo" style="min-height:400px"> 
     
     <!-- Gaming text box div element -->
     
@@ -385,9 +406,10 @@ Before arriving in GBDA, I was never fully sure of what I wanted to do later in 
      <br>
      <br>
      <!-- Button that opens Brawl Stars gameplay Youtube video in new tab -->
-     <button class="btn"><a href="https://www.youtube.com/watch?v=dZFmW809r-I&ab_channel=MatthewBest" target="_blank">View Gameplay<a/></button>
+      <button class="btn"><a href="https://www.youtube.com/watch?v=dZFmW809r-I&ab_channel=MatthewBest" target="_blank">View Gameplay</a></button>
     </div>
       
+     <!-- Brawl Stars photo div element -->
      <img class="col-5" src="BrawlStars.PNG" alt="Brawl Stars" style="float:right;margin-top:35px;min-height:400px">  
       
      </div>
